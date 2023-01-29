@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Smart room</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="manifest" type="application/json" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="192x192" href="https://download1322.mediafire.com/trm6rvzxet5g/h30kuwwv3vq2z1q/smartroom-icon-192.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="https://download1502.mediafire.com/nl1reevyu7xg/m4xqtpfdafoc3x6/smartroom-icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="https://download1491.mediafire.com/lw9qekiykvpg/dkhgb9skgtijpbd/smartroom-icon-512.png">
+  </head>
+
+  <body>
+    <div class="header">
+      <h1><a href="/">Haim's SmartRoom</a></h1>
+      <p>This page is used to test the API</p>
+    </div>
+
+    <div class="navbar">
+      <a class="activeNavBar" href="/">Room control</a>
+      <a href="/api">API settings</a>
+    </div>
+
+    <button class="accordion">TV</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><button onclick="sendData('ir?code=4144560900')">Power on/off</button></br>
+      </div>
+    </div>
+
+    <button class="accordion">AMP</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><button onclick="sendData('ir?code=3576332670')">Power on/off</button></br>
+        <button onclick="sendData('ir?code=3843720570')">Volume Up</button></br>
+        <button onclick="sendData('ir?code=3827008890')">Volume Down</button></br>
+        <button onclick="sendData('ir?code=3810297210')">Mute</button></br>
+      </div>
+    </div>
+
+    <button class="accordion">Equalizer</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><button onclick="sendData('ir?code=3208707840')">Power on/off</button></br>
+        <button onclick="sendData('ir?code=2724069120')">Next color</button></br>
+        <button onclick="sendData('ir?code=3223191296')">Equalizer color blue</button></br>
+        <button onclick="sendData('ir?code=3224239872')">Equalizer color green</button></br>
+        <button onclick="sendData('ir?code=3225288448')">Equalizer color turquoise</button></br>
+        <button onclick="sendData('ir?code=3226337024')">Equalizer color red</button></br>
+        <button onclick="sendData('ir?code=3227385600')">Equalizer color purple</button></br>
+        <button onclick="sendData('ir?code=3228434176')">Equalizer color yellow</button></br>
+        <button onclick="sendData('ir?code=3229482752')">Equalizer color white</button></br>
+      </div>
+    </div>
+
+    <button class="accordion">Room light</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><button onclick="sendData('ir?code=4261543426')">Power on</button></br>
+        <button onclick="sendData('ir?code=4244831746')">Power off</button></br>
+        <button onclick="sendData('ir?code=4061003266')">Room light mood (dynamic red)</button></br>
+        <button onclick="sendData('ir?code=3944021506')">Room light mood (dynamic green)</button></br>
+        <button onclick="sendData('ir?code=3977444866')">Room light mood (dynamic yellow)</button></br>
+        <button onclick="sendData('ir?code=3860463106')">Room light mood (dynamic blue)</button></br>
+        <button onclick="sendData('ir?code=4044291586')">Room light color red</button></br>
+        <button onclick="sendData('ir?code=4144561666')">Room light color green</button></br>
+        <button onclick="sendData('ir?code=4161273346')">Room light color yellow</button></br>
+        <button onclick="sendData('ir?code=3927309826')">Room light color blue</button></br>
+        <button onclick="sendData('ir?code=4127849986')">Room light brightness up</button></br>
+        <button onclick="sendData('ir?code=4010868226')">Room light brightness down</button></br>
+        <button onclick="sendData('ir?code=4077714946')">Room light color palette</button></br>
+      </div>
+    </div>
+
+    <button class="accordion">A/C</button>
+    <div class="panel">
+      <div class="acbutton">
+        <button id="ac_temp">Hello, World!</button>
+      </div>
+      <div class="btn-group">
+        </br><button onclick="sendData('ac?state=0')">Power off</button></br>
+        <button onclick="sendData('ac?state=1&mode=1&speed=1&temp=23')">Cold - 23° - Low fan</button></br>
+        <button onclick="sendData('ac?state=1&mode=4&speed=3&temp=28')">Hot - 28° - High fan</button></br>
+      </div>
+    </div>
+
+    <button class="accordion">Shades</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><button onclick="sendData('shades?preset=1')">Fully close</button></br>
+        <button onclick="sendData('shades?preset=2')">Fully open</button></br>
+        <button onclick="sendData('shades?preset=3')">Half open/close</button></br>
+        <button onclick="sendData('shades?preset=4')">Quarter close</button></br>
+        <button onclick="sendData('shades?preset=5')">Quarter open</button></br>
+        <button onclick="sendData('shades?preset=6')">Pause</button></br>
+      </div>
+    </div>
+
+    <button class="accordion">Spotify</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><input type="text" id="_DEVICEID" name="SPOTIFY_DEVICE_ID" value="HAIM-PC"><br><br>
+        <button onclick="sendData('spotify?action=0&device='+document.getElementById('_DEVICEID').value)">Play</button></br>
+        <button onclick="sendData('spotify?action=1&device='+document.getElementById('_DEVICEID').value)">Pause</button></br>
+        <button onclick="sendData('spotify?action=2&device='+document.getElementById('_DEVICEID').value)">Next song</button></br>
+        <button onclick="sendData('spotify?action=3&device='+document.getElementById('_DEVICEID').value)">Previous song</button></br>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>
