@@ -1,0 +1,31 @@
+IR codes:
+TV power - 4144560900
+AMP power - 3576332670
+AMP vol up - 3843720570
+AMP vol down - 3827008890
+AMP mute - 3810297210
+Equalizer ON - 3208707840
+Equalizer OFF - 3191996160
+Equalizer next color - 2724069120
+Equalizer color blue - 3223191296
+Equalizer color green - 3224239872
+Equalizer color turquoise - 3225288448
+Equalizer color red - 3226337024
+Equalizer color purple - 3227385600
+Equalizer color yellow - 3228434176
+Equalizer color white - 3229482752
+Room light ON - 4261543426
+Room light OFF - 4244831746
+Room light mood (dynamic red) - 4061003266 //can't change brightness in any mood
+Room light mood (dynamic green) - 3944021506
+Room light mood (dynamic yellow) - 3977444866
+Room light mood (dynamic blue) - 3860463106
+Room light color red - 4044291586
+Room light color green - 4144561666
+Room light color yellow - 4161273346
+Room light color blue - 3927309826
+Room light brightness up - 4127849986
+Room light brightness down - 4010868226
+Room light color palette - 4077714946
+Room shades up - 2740780800
+Room shades down - 2724069120

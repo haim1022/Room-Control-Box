@@ -1,0 +1,36 @@
+{
+  "name": "SmartRoom App",
+  "short_name": "SmartRoom",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4CAF50",
+  "description": "SmartRoom Web App",
+  "lang": "en-US",
+  "orientation": "portrait",
+  "theme_color": "#4CAF50",
+  "icons": [{
+    "src": "https://download1489.mediafire.com/txtj8pm2u32g/o45qxszl3shu0ly/smartroom-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "https://download1072.mediafire.com/y61cvld59khg/lqrdkore45k06g0/smartroom-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "https://download1334.mediafire.com/qmdov02z4p5g/nfvq7tl64wuzevr/smartroom-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "https://download1322.mediafire.com/trm6rvzxet5g/h30kuwwv3vq2z1q/smartroom-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "https://download1502.mediafire.com/nl1reevyu7xg/m4xqtpfdafoc3x6/smartroom-icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "https://download1491.mediafire.com/lw9qekiykvpg/dkhgb9skgtijpbd/smartroom-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }]
+}

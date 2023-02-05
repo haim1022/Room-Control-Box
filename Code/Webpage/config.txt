@@ -1,0 +1,15 @@
+{
+  "mDNS address": "smartroom",
+  "Wi-Fi": {
+    "SSID": "Maison",
+    "Password": "0613504747"
+  },
+  "FTP credentials": {
+    "Username": "smartroom",
+    "Password": "Aa123456"
+  },
+  "Spotify": {
+    "Client ID": "12345678901234567890123456789012",
+    "Client secret": "12345678901234567890123456789012"
+  }
+}

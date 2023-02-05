@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Smart room</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="manifest" type="application/json" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="192x192" href="https://download1322.mediafire.com/trm6rvzxet5g/h30kuwwv3vq2z1q/smartroom-icon-192.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="https://download1502.mediafire.com/nl1reevyu7xg/m4xqtpfdafoc3x6/smartroom-icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="https://download1491.mediafire.com/lw9qekiykvpg/dkhgb9skgtijpbd/smartroom-icon-512.png">
+  </head>
+
+  <body>
+    <div class="header">
+      <h1><a href="/">Haim's SmartRoom</a></h1>
+      <p>This page is used to test the API</p>
+    </div>
+
+    <div class="navbar">
+      <a href="/">Room control</a>
+      <a class="activeNavBar" href="/api">API settings</a>
+    </div>
+
+    <button class="accordion">Wi-Fi</button>
+    <div class="panel">
+      <form action="/api" method="post">
+        </br><label>SSID: <input type="text" id="_SSID" name="WIFI_SSID" placeholder="SSID"></label><br><br>
+        <label for="_PASS">Password:</label>
+        <input type="password" id="_PASS" name="WIFI_PASS" placeholder="Password"><br><br>
+        <input type="submit" value="Send & Reset"></br>
+      </form>
+    </div>
+
+    <button class="accordion">FTP Server</button>
+    <div class="panel">
+      <form action="/api" method="post">
+        </br><label for="_SSID">Username:</label>
+        <input type="text" id="_USERNAME" name="FTP_USERNAME" placeholder="Username"><br><br>
+        <label for="_PASS">Password:</label>
+        <input type="password" id="_PASSWORD" name="FTP_PASSWORD" placeholder="Password"><br><br>
+        <input type="submit" value="Send & Reset"></br>
+      </form>
+    </div>
+
+    <button class="accordion">mDNS Service</button>
+    <div class="panel">
+      <form action="/api" method="post">
+        </br><label for="_SSID">Address:</label>
+        <input type="text" id="_ADDRESS" name="MDNS_ADDRESS" placeholder="Address"><br><br>
+        <input type="submit" value="Send & Reset"></br>
+      </form>
+    </div>
+
+    <button class="accordion">Spotify API</button>
+    <div class="panel">
+      <div class="btn-group">
+        </br><a href="https://accounts.spotify.com/authorize?client_id=d9fd06c0c7554f6296a479e249e9a948&response_type=code&redirect_uri=http%3A%2F%2Fsmartroom.local%2Fspotify&scope=user-read-playback-state%20user-modify-playback-state"><button>Get refresh token</button></a></br>
+      </div>
+      <form action="/api" method="post">
+        </br><label for="_SSID">Client ID:</label>
+        <input type="text" id="_CLIENTID" name="SPOTIFY_CLIENT_ID" placeholder="Client ID"><br><br>
+        <label for="_PASS">Client secret:</label>
+        <input type="password" id="_CLIENTSECRET" name="SPOTIFY_CLIENT_SECRET" placeholder="Client secret"><br><br>
+        <input type="submit" value="Send & Reset"></br>
+      </form>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>
