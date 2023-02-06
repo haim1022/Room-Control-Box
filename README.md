@@ -1,6 +1,6 @@
 # Room control box / Smart room controller
 
-![Main Image](images/Main_photo.jpg)
+![Main Image](Images/Main_photo.JPG)
 
 This project will turn your room into a smart room by controlling all of your infrared controlled appliances using a web interface.
 Place this prototype in a visible area of your room and configure a few infrared codes to control the TV, sound amplifier, an infrared controlled light bulb, air conditioner and mush more.
@@ -33,7 +33,7 @@ This web interface/server has no security setting built into it, if you are plan
 ### Schematic diagram
 
 <p align="center">
-<img alt="Schematic Diagram" src="images/Arduino%20spectrum%20analyzer%20-%20schematic_fixed_1.png">
+<img alt="Schematic Diagram" src="Images/Schematics.png">
 </p>
                            
 To supply power to the circuit you can use the Wemos D1 USB connector.
@@ -51,7 +51,10 @@ Interfacing with the Spotify API is being set up using the web interface, after 
 
 ## Code
 
-Code is available [here](Code/Arduino-32band-audio-spectrum-visualizer-analyzer.ino)
+Code is available [here](Code/Arduino)
+
+Webpage files are located [here](Code/Webpage)
+
 Notice: You'll need to transfer the webpage files (HTML, CSS and JS) to the SPIFFs of the ESP32 using the FTP server.
 
 ### Watch this project in action
@@ -59,4 +62,4 @@ Notice: You'll need to transfer the webpage files (HTML, CSS and JS) to the SPIF
 Examine this demo video
 
 
- [![Demo Video](http://img.youtube.com/vi/GF_Ero/0.jpg)](https://youtu.be/GF_iEro)
+ [![Demo Video](http://img.youtube.com/vi/OeQo7x8opMc/0.jpg)](https://youtu.be/OeQo7x8opMc)
